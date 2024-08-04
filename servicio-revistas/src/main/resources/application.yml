@@ -1,0 +1,15 @@
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
+  application:
+    name: servicio-revistas
+  data:
+    mongodb:
+      uri: mongodb://mongo:27017/biblioteca
+
+server:
+  port: 8082
+
+

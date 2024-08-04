@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package com.biblioteca.libros.grpc;
+
+service LibroService {
+  rpc GetLibro(LibroRequest) returns (LibroResponse);
+  rpc CreateLibro(Libro) returns (LibroResponse);
+  rpc UpdateLibro(Libro) returns (LibroResponse);
+  rpc DeleteLibro(LibroRequest) returns (LibroResponse);
+  rpc ListLibros(Empty) returns (LibroListResponse);
+}
+
+message LibroRequest {
+  string id = 1;
+}
+
+message Libro {
+  string id = 1;
+  string titulo = 2;
+  string autor = 3;
+  string categoria = 4;
+  string fechaPublicacion = 5;
+}
+
+message LibroResponse {
+  Libro libro = 1;
+}
+
+message LibroListResponse {
+  repeated Libro libros = 1;
+}
+
+message Empty {}

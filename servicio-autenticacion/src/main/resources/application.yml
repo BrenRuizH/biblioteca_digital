@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: servicio-autenticacion
+  data:
+    mongodb:
+      uri: mongodb://mongo:27017/biblioteca
+  security:
+    user:
+      name: admin
+      password: admin
+
+server:
+  port: 8085
+
+jwt:
+  secret: your-secret-key
+  expiration: 3600000 # 1 hour in milliseconds
+
+logging:
+  level:
+    org.springframework.security: DEBUG

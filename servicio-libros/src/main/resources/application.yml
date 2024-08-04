@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: servicio-libros
+  data:
+    mongodb:
+      uri: mongodb://mongo:27017/biblioteca
+  security:
+    user:
+      name: admin
+      password: admin
+
+server:
+  port: 8081
+
+grpc:
+  server:
+    port: 9093

@@ -1,0 +1,13 @@
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
+  application:
+    name: servicio-prestamos
+  data:
+    mongodb:
+      uri: mongodb://mongo:27017/biblioteca
+
+server:
+  port: 8084

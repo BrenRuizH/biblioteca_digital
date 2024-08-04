@@ -1,0 +1,38 @@
+[
+    {
+      "_id": { "$oid": "64cbf1f10000000000000006" },
+      "titulo": "CIEN AÑOS DE SOLEDAD",
+      "autor": "GABRIEL GARCÍA MÁRQUEZ",
+      "categoria": "REALISMO MÁGICO",
+      "fechaPublicacion": "1967-05-30"
+    },
+    {
+      "_id": { "$oid": "64cbf1f10000000000000007" },
+      "titulo": "1984",
+      "autor": "GEORGE ORWELL",
+      "categoria": "DISTOPÍA",
+      "fechaPublicacion": "1949-06-08"
+    },
+    {
+      "_id": { "$oid": "64cbf1f10000000000000008" },
+      "titulo": "EL PRINCIPITO",
+      "autor": "ANTOINE DE SAINT-EXUPÉRY",
+      "categoria": "FÁBULA",
+      "fechaPublicacion": "1943-04-06"
+    },
+    {
+      "_id": { "$oid": "64cbf1f10000000000000009" },
+      "titulo": "DON QUIJOTE DE LA MANCHA",
+      "autor": "MIGUEL DE CERVANTES",
+      "categoria": "NOVELA",
+      "fechaPublicacion": "1605-01-16"
+    },
+    {
+      "_id": { "$oid": "64cbf1f10000000000000010" },
+      "titulo": "LA SOMBRA DEL VIENTO",
+      "autor": "CARLOS RUIZ ZAFÓN",
+      "categoria": "MISTERIO",
+      "fechaPublicacion": "2001-04-02"
+    }
+  ]
+  

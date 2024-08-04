@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  security:
+    user:
+      name: admin
+      password: admin
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: libros_route
+          uri: grpc://localhost:9090
+          predicates:
+            - Path=/libros/**
+          filters:
+            - StripPrefix=1
+        - id: revistas_route
+          uri: http://localhost:8082
+          predicates:
+            - Path=/revistas/**
+        - id: usuarios_route
+          uri: http://localhost:8083
+          predicates:
+            - Path=/usuarios/**
+        - id: prestamos_route
+          uri: http://localhost:8084
+          predicates:
+            - Path=/prestamos/**

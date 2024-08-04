@@ -1,0 +1,43 @@
+[
+    {
+      "_id": { "$oid": "64cbf1f10000000000000011" },
+      "titulo": "NATIONAL GEOGRAPHIC",
+      "noEdicion": "2024-07",
+      "categoria": "CIENCIA",
+      "fechaPublicacion": "2024-07-01",
+      "fechaDevolucion": "2024-07-15"
+    },
+    {
+      "_id": { "$oid": "64cbf1f10000000000000012" },
+      "titulo": "TIME",
+      "noEdicion": "2024-08",
+      "categoria": "NOTICIAS",
+      "fechaPublicacion": "2024-08-01",
+      "fechaDevolucion": "2024-08-15"
+    },
+    {
+      "_id": { "$oid": "64cbf1f10000000000000013" },
+      "titulo": "FORBES",
+      "noEdicion": "2024-09",
+      "categoria": "NEGOCIOS",
+      "fechaPublicacion": "2024-09-01",
+      "fechaDevolucion": "2024-09-15"
+    },
+    {
+      "_id": { "$oid": "64cbf1f10000000000000014" },
+      "titulo": "SCIENCE",
+      "noEdicion": "2024-10",
+      "categoria": "INVESTIGACIÓN",
+      "fechaPublicacion": "2024-10-01",
+      "fechaDevolucion": "2024-10-15"
+    },
+    {
+      "_id": { "$oid": "64cbf1f10000000000000015" },
+      "titulo": "THE NEW YORKER",
+      "noEdicion": "2024-11",
+      "categoria": "CULTURA",
+      "fechaPublicacion": "2024-11-01",
+      "fechaDevolucion": "2024-11-15"
+    }
+  ]
+  

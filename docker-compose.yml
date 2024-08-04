@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo-init:/docker-entrypoint-initdb.d
+    environment:
+      MONGO_INITDB_DATABASE: biblioteca
+
+  api-gateway:
+    build: ./api-gateway
+    container_name: api-gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+      - servicio-autenticacion
+      - servicio-usuarios
+      - servicio-libros
+      - servicio-prestamos
+      - servicio-revistas
+
+  servicio-autenticacion:
+    build: ./servicio-autenticacion
+    container_name: servicio-autenticacion
+    ports:
+      - "8085:8085"
+    depends_on:
+      - mongo
+
+  servicio-usuarios:
+    build: ./servicio-usuarios
+    container_name: servicio-usuarios
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mongo
+
+  servicio-libros:
+    build: ./servicio-libros
+    container_name: servicio-libros
+    ports:
+      - "8082:8082"
+    depends_on:
+      - mongo
+
+  servicio-prestamos:
+    build: ./servicio-prestamos
+    container_name: servicio-prestamos
+    ports:
+      - "8083:8083"
+    depends_on:
+      - mongo
+
+  servicio-revistas:
+    build: ./servicio-revistas
+    container_name: servicio-revistas
+    ports:
+      - "8084:8084"
+    depends_on:
+      - mongo

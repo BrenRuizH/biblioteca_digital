@@ -1,0 +1,16 @@
+[
+    {
+        "id": "66adb01ed210e216d644565f",
+        "nombre": "JUAN PEREZ",
+        "email": "JUAN.PEREZ@EXAMPLE.COM",
+        "password": "$2a$10$xGGWJ9ouHqt1WGMGmmTsguQqPk613YYE3vBya6ZaD09tGa4cGoyz.",
+        "rol": "ADMIN"
+    },
+    {
+        "id": "66af00bd98f74665ff54dc1f",
+        "nombre": "MARIA LOPEZ",
+        "email": "MARIA.LOPEZ@EXAMPLE.COM",
+        "password": "$2a$10$dJlgfHlHqQnkVeOIshtdn.0PWeZGJh58x0nRVdimHsj9HAd2u4cye",
+        "rol": "USER"
+    }
+]
